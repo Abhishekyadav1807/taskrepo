@@ -21,7 +21,7 @@
         { "name": "status", "type": "enum", "options": ["planned", "active", "done"], "required": true, "default": "planned", "label": { "en": "Status", "hi": "Sthiti" } },
         { "name": "budget", "type": "number", "required": false, "label": { "en": "Budget", "hi": "Bajat" } },
         { "name": "deadline", "type": "date", "required": false, "label": { "en": "Deadline", "hi": "Antim Tithi" } },
-        { "name": "unknown_widget_data", "type": "mystery", "required": false }
+        { "name": "unknown_widget_data", "type": "string", "required": false, "label": { "en": "Extra Notes", "hi": "Atirikt Tippani" } }
       ],
       "ui": {
         "list": ["title", "status", "budget", "deadline"],
