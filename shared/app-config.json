@@ -17,10 +17,10 @@
       "name": "projects",
       "label": "Projects",
       "fields": [
-        { "name": "title", "type": "string", "required": true, "label": { "en": "Title", "hi": "??????" } },
-        { "name": "status", "type": "enum", "options": ["planned", "active", "done"], "required": true, "default": "planned", "label": { "en": "Status", "hi": "??????" } },
-        { "name": "budget", "type": "number", "required": false, "label": { "en": "Budget", "hi": "???" } },
-        { "name": "deadline", "type": "date", "required": false, "label": { "en": "Deadline", "hi": "??? ????" } },
+        { "name": "title", "type": "string", "required": true, "label": { "en": "Title", "hi": "Sheershak" } },
+        { "name": "status", "type": "enum", "options": ["planned", "active", "done"], "required": true, "default": "planned", "label": { "en": "Status", "hi": "Sthiti" } },
+        { "name": "budget", "type": "number", "required": false, "label": { "en": "Budget", "hi": "Bajat" } },
+        { "name": "deadline", "type": "date", "required": false, "label": { "en": "Deadline", "hi": "Antim Tithi" } },
         { "name": "unknown_widget_data", "type": "mystery", "required": false }
       ],
       "ui": {
@@ -32,10 +32,10 @@
       "name": "tasks",
       "label": "Tasks",
       "fields": [
-        { "name": "name", "type": "string", "required": true, "label": { "en": "Task", "hi": "???" } },
-        { "name": "project_id", "type": "number", "required": false, "label": { "en": "Project ID", "hi": "????????? ????" } },
-        { "name": "priority", "type": "enum", "options": ["low", "medium", "high"], "required": false, "default": "medium", "label": { "en": "Priority", "hi": "??????????" } },
-        { "name": "is_done", "type": "boolean", "required": false, "default": false, "label": { "en": "Done", "hi": "????" } }
+        { "name": "name", "type": "string", "required": true, "label": { "en": "Task", "hi": "Karya" } },
+        { "name": "project_id", "type": "number", "required": false, "label": { "en": "Project ID", "hi": "Project ID" } },
+        { "name": "priority", "type": "enum", "options": ["low", "medium", "high"], "required": false, "default": "medium", "label": { "en": "Priority", "hi": "Prathmikta" } },
+        { "name": "is_done", "type": "boolean", "required": false, "default": false, "label": { "en": "Done", "hi": "Poora" } }
       ],
       "ui": {
         "list": ["name", "priority", "is_done"],

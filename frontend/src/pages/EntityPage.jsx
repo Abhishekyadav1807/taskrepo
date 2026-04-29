@@ -27,6 +27,12 @@ export function EntityPage() {
     return config.entities.find((entry) => entry.name === entityName) || null;
   }, [config, entityName]);
 
+  const columnLabel = (col) => {
+    const field = entity?.fields.find((f) => f.name === col);
+    if (!field) return col;
+    return field.label?.[lang] || field.label?.en || col;
+  };
+
   const load = async () => {
     if (!token || !entityName) return;
     setLoading(true);
@@ -164,7 +170,7 @@ export function EntityPage() {
         <h3 style={{ marginTop: 0 }}>Records</h3>
         {rows.length === 0 ? <p>No records yet.</p> : (
           <table>
-            <thead><tr><th>ID</th>{entity.ui.list.map((col) => <th key={col}>{col}</th>)}<th>Actions</th></tr></thead>
+            <thead><tr><th>ID</th>{entity.ui.list.map((col) => <th key={col}>{columnLabel(col)}</th>)}<th>Actions</th></tr></thead>
             <tbody>
               {rows.map((row) => (
                 <tr key={String(row.id)}>
